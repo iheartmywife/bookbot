@@ -16,3 +16,20 @@ def character_count(book_text):
                 alphabet[letter] += 1
     
     return alphabet
+
+def sort_on(dict):
+    return dict["count"]
+
+def list_of_dictionaries(dictionary):
+    dictionaries__list = []
+    for char in dictionary:
+        count = dictionary[char]
+        new_dict = {
+            "char": char,
+            "count": count
+        }
+        dictionaries__list.append(new_dict)
+        dictionaries__list.sort(reverse=True, key=sort_on)
+    return dictionaries__list
+
+    

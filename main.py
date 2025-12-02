@@ -3,9 +3,13 @@ def get_book_text(filepath):
         file_contents = f.read()
         return file_contents
     
-from stats import character_count
+# def book_report(list_of_dictionaries):
+    
+
+from stats import character_count, list_of_dictionaries
     
 def main():
     char_count = character_count(get_book_text("books/frankenstein.txt"))
-    print(char_count)
+    test = list_of_dictionaries(char_count)
+    print(test)
 main()
