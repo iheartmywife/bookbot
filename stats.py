@@ -32,4 +32,7 @@ def list_of_dictionaries(dictionary):
         dictionaries__list.sort(reverse=True, key=sort_on)
     return dictionaries__list
 
-    
+def pretty_print(dictionary_list):
+    for entry in dictionary_list:
+        print(f"{entry["char"]}: {entry["count"]}")
+    return
